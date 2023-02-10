@@ -1,10 +1,11 @@
+/* components */
 import Head from "next/head";
 import Footer from "./footer";
 import Header from "./header";
 
 const Layout = (props) => {
   return (
-    <div>
+    <div className="bg-primary">
       <Head>
         <title>
           {props.title ? `${props.title} | Bro-Portfolio` : "Bro-Portfolio"}

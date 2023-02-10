@@ -1,5 +1,5 @@
+/* components */
 import Animation from "@/components/home/animation";
-import Image from "next/image";
 
 const Greeting = () => {
   return (
@@ -19,7 +19,11 @@ const Greeting = () => {
           welcome welcome welcome welcome welcome welcome welcome welcome
         </p>
         <div className="flex justify-center">
-          <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+          <button
+            className="inline-flex text-white  border-0 py-2 px-6 focus:outline-none  rounded text-lg
+          bg-indigo-500 dark:bg-indigo-600
+          hover:bg-indigo-600 dark:hover:bg-indigo-500"
+          >
             프로젝트 보기
           </button>
         </div>

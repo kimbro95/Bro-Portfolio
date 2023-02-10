@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
+/* components */
+import DarkModeButton from "./dark-mode-button";
+
 const Header = () => {
   const { pathname } = useRouter();
 
@@ -33,12 +36,7 @@ const Header = () => {
           >
             Projects
           </Link>
-
-          {/* 다크모드 버튼 작업 예정
-          <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-            다크모드버튼
-          </button>
-          */}
+          <DarkModeButton />
         </nav>
       </div>
     </header>
