@@ -1,11 +1,20 @@
+import Head from "next/head";
 import Footer from "./footer";
 import Header from "./header";
 
 const Layout = (props) => {
   return (
     <div>
+      <Head>
+        <title>
+          {props.title ? `${props.title} | Bro-Portfolio` : "Bro-Portfolio"}
+        </title>
+        <meta name="description" content="Bro Portfolio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
+
       <Header />
-      <h1>Layout</h1>
       <div>{props.children}</div>
       <Footer />
     </div>
